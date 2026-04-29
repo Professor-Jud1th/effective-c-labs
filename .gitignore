@@ -1,2 +1,14 @@
+# OS-specific junk
+.DS_Store
+Thumbs.db
+
+# Editor-specific junk
+.vscode/
+.idea/
+*.swp
+
+# C Compilation junk
+*.o
+*.out
+executable
 alignment
-.DS_Storee
