@@ -1,14 +1,36 @@
-# OS-specific junk
+# --- System Files ---
 .DS_Store
 Thumbs.db
+desktop.ini
 
-# Editor-specific junk
+# --- IDE & Environment ---
 .vscode/
-.idea/
 *.swp
+*.swo
 
-# C Compilation junk
+# --- Build Artifacts & Debug Symbols ---
+# Ignores all MacOS debug symbol folders.
+*.dSYM/
+#Ignores common compiled object files.
 *.o
-*.out
-executable
-alignment
+*.obj
+
+# --- Chapter Removal ---
+# Ignores all binaries but keeps code.
+# 1.  Ignore anything inside any folder starting with "chapter_"
+chapter_*/
+
+# 2. DO NOT ignore folders themselves
+!chapter_*/
+
+# 3. DO NOT ignore .c or .h files inside the folders
+!chapter_*/*.c
+!chapter_*/*.h
+
+# 4. Keep all documentation/notes
+!chapter_*/README.md
+
+# --- Security & Local Conig ---
+# Makes sure no local environment scripts or secrets gets pushed
+.env
+*.log
