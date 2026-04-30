@@ -6,7 +6,7 @@
  * @version 0.1
  * 2026-04-29
  *
- * @copyright Copyright (c) 2026
+ * @copyright Copyright (c) 2026 
  *
  */
 
